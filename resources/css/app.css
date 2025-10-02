@@ -1,0 +1,154 @@
+/* resources/public/css/app.css */
+
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar Styles */
+nav {
+    background-color: #ffffff;
+    padding: 1.2rem 2rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+nav .logo h2 {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #666;
+    font-size: 0.95rem;
+    font-weight: 400;
+}
+
+/* Container */
+.container {
+    max-width: 1100px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+}
+
+/* Page Title */
+.page-title {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+/* Table Styles */
+.user-table {
+    width: 100%;
+    background-color: #ffffff;
+    border-collapse: collapse;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.user-table thead {
+    background-color: #fafafa;
+}
+
+.user-table th {
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.user-table tbody tr {
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.user-table td {
+    padding: 1rem;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #ffffff;
+    padding: 2rem;
+    text-align: center;
+    border-top: 1px solid #e0e0e0;
+    margin-top: 4rem;
+}
+
+footer p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        padding: 1rem;
+    }
+
+    nav .logo h2 {
+        font-size: 1.3rem;
+    }
+
+    nav ul {
+        gap: 1rem;
+    }
+
+    nav ul li a {
+        font-size: 0.85rem;
+    }
+
+    .container {
+        padding: 0 1rem;
+        margin: 2rem auto;
+    }
+
+    .page-title {
+        font-size: 1.5rem;
+    }
+
+    .user-table {
+        font-size: 0.85rem;
+    }
+
+    .user-table th,
+    .user-table td {
+        padding: 0.75rem 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .user-table th,
+    .user-table td {
+        padding: 0.6rem 0.4rem;
+        font-size: 0.8rem;
+    }
+}
